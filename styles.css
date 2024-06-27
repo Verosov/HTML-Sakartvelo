@@ -1,0 +1,146 @@
+.nav {
+	display: flex;
+	background-color: #FF6565;
+	border: 2px solid white;
+	border-radius: 10px;
+	position:-webkit-sticky;
+	position: sticky;  
+}
+.nav a:link {
+		color: white;
+		padding: 10px 25px;
+		text-align: right;
+	}
+.nav a:visited{
+	color: white;
+}
+.nav a:hover{
+	background-color:748DA6;
+	border: 1px solid white;
+	border-radius: 10px; 	
+}
+
+.container-top {
+	position: relative;
+}
+.title {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-family: "lucida handwriting", sans-serif;
+	color:#FFFFFF;
+	transform: translate(-50%, -50%);
+	font-size: 70px;
+}
+.intro{
+	text-align: center-left;
+	text-indent:30px;
+	line-height: 25px;
+	font-family:Garamond, serif;
+	font-size:20px;
+	padding:20px 75px;
+}
+.facts{
+	text-align: center;
+	line-height: 18px;
+	font-family:Garamond, serif;
+	font-size:18px;
+	padding:10px 35px;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+.img{
+	display: center;
+	width: 100%;
+	height: auto;
+	border-radius:8px;
+}
+.overlay{
+	position: absolute;	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height:100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: #FF6565;
+	border-radius:8px;
+	
+}
+.container:hover .overlay{
+	opacity: 0.8;
+}
+.text{
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(-10%, -10%);
+	-ms-transform: translate(-10%, -10%);
+}
+
+* {
+	box-sizing: border-box;
+}
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	float: left;
+	width: 33%;
+	padding: 0 4px;
+}
+.column img {
+	margin-top: 0px;
+	padding:5px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	
+.intro1{
+	float: left;
+	text-indent:30px;
+	line-height: 25px;
+	font-family:Garamond, serif;
+	font-size:20px;
+	padding: 30px;
+	width: 35%;
+	list-style-type: none;
+}
+.travel{
+	width:100%;	
+}
+.row1 {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column1 {
+	float: left;
+	width: 50%;
+	padding: 0 4px;
+}
+.column1 img {
+	margin-top: 0px;
+	padding: 8px;
+}
+.row1:after {
+	content: "";
+	display: table;
+	clear: both;
+}	
